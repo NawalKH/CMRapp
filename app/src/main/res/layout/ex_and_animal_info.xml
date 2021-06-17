@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:text="The ES&amp;A Laboratory facilities and services"
+        android:id="@+id/t"
+        android:textColor="#6478c9"
+        android:textSize="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        />
+
+    <com.roughike.swipeselector.SwipeSelector
+        android:id="@+id/swipeSelector"
+        android:value="@+value/swipeSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:text="Animal Species and Models"
+        android:id="@+id/t2"
+        android:layout_below="@+id/swipeSelector"
+        android:textColor="#6478c9"
+        android:textSize="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/balb"
+        android:layout_below="@+id/t2">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="3dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/balb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="BALB/C"
+                android:background="#34000000"
+                />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#10000000">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/Itemname"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textSize="12dp"
+             android:textColor="#000000"
+            android:padding="5dp"
+            android:text="BALB/c is an albino, laboratory in-bred strain of the
+House Mouse from which a number of common
+substrains are derived. Now over 200 generations,
+BALB/c mice are distributed globally, and are
+among the most widely used inbred strains used in
+animal experimentation."
+            android:paddingTop="5dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/c5"
+        android:layout_below="@+id/balb">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="3dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/c5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="C57BL/6"
+                    android:background="#34000000"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#10000000">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text="It is the most widely used “genetic background”
+for genetically modified mice for use as models of
+human disease. They are the most widely used and
+best-selling mouse strain, due to the availability of
+congenic strains, easy breeding, and robustness."
+                android:paddingTop="5dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/nude"
+        android:layout_below="@+id/c5">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="3dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nude" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="NUDE MICE"
+                    android:background="#34000000"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#10000000">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text="Nude mice are useful for research into both cancer
+and immunology. Inbred Strains of Mice,,” an
+important process for the production of monoclonal
+antibodies. but do develop other types of cancers
+in later life, most commonly reticular neoplasms,
+lung and renal for being relatively resistant to dietinduced
+atherosclerosis, making them a useful
+model for cardiovascular research."
+                android:paddingTop="5dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/rat"
+        android:layout_below="@+id/nude">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="3dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="RAT:SPRAGUEDAWLEY"
+                    android:background="#34000000"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#10000000">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text="The Wistar rat is currently one of the most popular
+rats used for laboratory research. . The Sprague
+Dawley rat and Long-Evans rats were developed
+from Wistar rats. Wistar rats are more active than
+others like Sprague Dawley rats."
+                android:paddingTop="5dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#696969"
+        android:layout_below="@+id/rat"
+        android:id="@+id/line"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/line">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#42549c"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:typeface="serif"
+            android:text="Get In Touch"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:text="exp.lab@ksu.edu.sa\npnhrc.ksu.edu.sa\n46 92626 | 46 71303 | 46 72165"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="collegeofmedicine.researcher.cmr">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:name="collegeofmedicine.researcher.ResearchApp"
+        android:allowBackup="true"
+        android:configChanges="locale|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        tools:replace="android:supportsRtl"
+
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+
+
+        android:theme="@style/AppTheme">
+        <activity android:name="collegeofmedicine.researcher.cmr.MainActivity" />
+        <activity android:name="collegeofmedicine.researcher.cmr.grantsActivity" />
+        <activity android:name="collegeofmedicine.researcher.cmr.EventsActivity" />
+        <activity
+            android:name="collegeofmedicine.researcher.cmr.SampleSizeCalculater"
+            android:label="SSC"
+            android:parentActivityName="collegeofmedicine.researcher.cmr.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="collegeofmedicine.researcher.cmr.MainActivity" />
+        </activity>
+        <activity
+            android:name="collegeofmedicine.researcher.cmr.eventInfo"
+            android:label="@string/title_activity_event_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="collegeofmedicine.researcher.cmr.paperlist" />
+        <activity android:name="collegeofmedicine.researcher.cmr.paperInfo" />
+        <activity android:name="collegeofmedicine.researcher.cmr.web" />
+        <activity android:name="collegeofmedicine.researcher.cmr.ticketForm" />
+        <activity
+            android:name="collegeofmedicine.researcher.cmr.splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="collegeofmedicine.researcher.cmr.qrTicket" />
+        <activity
+            android:name="collegeofmedicine.researcher.cmr.facilitiesActivity"
+            android:label="@string/title_activity_facilities"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="collegeofmedicine.researcher.cmr.Links" />
+
+        <service
+            android:name="collegeofmedicine.researcher.cmr.NotifyService"
+            android:enabled="true" />
+
+        <activity android:name="collegeofmedicine.researcher.cmr.About" />
+        <activity android:name="collegeofmedicine.researcher.cmr.TappedPnF" />
+        <activity android:name="collegeofmedicine.researcher.cmr.FormUpload" />
+        <activity android:name="collegeofmedicine.researcher.cmr.contact" />
+        <activity android:name="collegeofmedicine.researcher.cmr.grantProvider" />
+        <activity android:name="collegeofmedicine.researcher.cmr.Exp_and_Animal"
+            android:label="@string/title_activity_event_info"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:elevation="5dp">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:id="@+id/a"
+   >
+
+    <View
+        android:layout_width="7dp"
+        android:layout_height="match_parent"
+        android:background="#9ea2c7"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/view8">
+    </View>
+
+
+
+
+    <RelativeLayout
+        android:background="#fffffc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:padding="20dp"
+        android:layout_toRightOf="@+id/view8"
+        android:layout_centerVertical="true">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="38dp"
+            android:textColor="#a9a9a9"
+            android:textStyle="bold"
+            android:id="@+id/day"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sep"
+            android:typeface="serif"
+            android:textSize="19dp"
+            android:id="@+id/month"
+            android:textColor="#a9a9a9"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/day"/>
+
+    </RelativeLayout>
+
+
+
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:background="#d9d9d9"
+        android:visibility="visible"
+        android:id="@+id/view">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/view"
+        android:layout_toEndOf="@+id/view"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/placeholder"
+           />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@android:style/Widget.Holo.Light.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/EventInfo"
+        android:layout_below="@id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:text="Medium Text"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+
+
+    <TextView
+        android:id="@+id/edscrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTextView"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_marginRight="20dp"
+        android:text="dedgshgjfhhgjlh;jlk;;jlhuljlkjkljlkjlkjlkjlkjlkjlkjgyjthdrgsgdhfhgjhkjlk"
+        android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Info" />
+
+    <ImageView
+
+        android:id="@+id/ivArrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+ </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f2f2f2"
+        android:visibility="visible"
+        android:layout_above="@id/EventInfo"
+        />
+
+</RelativeLayout>

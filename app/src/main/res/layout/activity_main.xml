@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.nawal.researchapp.cmr.nawal.researchapp.MainActivity"
+    >
+
+
+        <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            app:srcCompat="@drawable/logo"
+            android:padding="@dimen/activity_vertical_margin"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_below="@+id/logo"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/events"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:backgroundTint="#547c81"
+                android:drawableTop="@drawable/event"
+                android:elevation="12dp"
+                android:text="Events"
+                android:textColor="#ffffff"
+                android:textSize="13dp"/>
+
+
+            <Button
+                android:id="@+id/facilities"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#6C7A89"
+                android:drawableTop="@drawable/facilities"
+                android:elevation="12dp"
+                android:text="@string/facilities_equipments"
+                android:textColor="#ffffff"
+                android:textSize="13dp">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/grants"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#A3C6C4"
+                android:drawableTop="@drawable/grants"
+                android:elevation="12dp"
+                android:text="Grants"
+                android:textColor="#ffffff"
+                android:textSize="13dp">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/paper"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#bdccd1"
+                android:drawableTop="@drawable/paper"
+                android:elevation="12dp"
+                android:text="Highlighted papers"
+                android:textColor="#ffffff"
+                android:textSize="13dp">
+
+            </Button>
+
+
+
+            <Button
+
+                android:id="@+id/survey"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9e9abc"
+                android:drawableTop="@drawable/survey"
+                android:elevation="21dp"
+                android:text="@string/protocols_forms"
+                android:textColor="#ffffff"
+                android:textSize="13dp"></Button>
+
+
+            <Button
+                android:id="@+id/cal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#8682a4"
+                android:drawableTop="@drawable/calculator"
+                android:elevation="12dp"
+                android:text="Sample Size Calculator"
+                android:textColor="#ffffff"
+                android:textSize="13dp">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/infoo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/about"
+            android:onClick="showAbout"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ABOUT"
+            android:textColor="#43c3d8"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/links"
+                android:id="@+id/link_btn"
+                android:onClick="showLinks"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="LINKS"
+                android:textColor="#43c3d8"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/contact"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="showContact"
+            android:layout_marginBottom="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CONTACT"
+                android:textColor="#43c3d8"
+                android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+    </ScrollView>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Research App</string>
+    <string name="title_activity_event">Event</string>
+
+
+    <string-array name="conflvl">
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>99</item>
+    </string-array>
+    <string name="title_activity_grants">grantsActivity</string>
+    <string name="title_activity_events">EventsActivity</string>
+    <string name="title_activity_event_info">eventInfo</string>
+    <string name="sample_size_calculator">Sample Size Calculator</string>
+    <string name="population_size">Population Size:</string>
+    <string name="Margin_of_Error">Margin of Error(%):</string>
+    <string name="confidence_level">Confidence Level(%):</string>
+    <string name="calculate">Calculate</string>
+
+    <string name="current_date">July, 2017</string>
+    <string name="add_event">ADD CALENDAR EVENT</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="last_date">30</string>
+    <string name="title_activity_facilities">facilitiesActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="facilities_equipments">Facilities &amp; Equipments</string>
+    <string name="protocols_forms">Protocols &amp; forms</string>
+
+
+</resources>
+
+
+

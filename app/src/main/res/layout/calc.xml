@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/sample_size_calculator"
+        android:textColor="#10069f"
+        android:textSize="25dp"
+        android:typeface="serif"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/contact_form_title"
+        android:background="#6c6c6c"
+        android:visibility="visible"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.45"
+        android:layout_gravity="center_vertical"
+        android:textSize="17dp"
+        android:text="@string/population_size"
+        android:typeface="serif"
+        android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:paddingLeft="8dp"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.55"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:layout_gravity="center_vertical"
+            android:textSize="17dp"
+            android:text="@string/Margin_of_Error"
+            android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="0.55"
+        android:layout_height="40dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/editText3"
+        android:inputType="numberDecimal"/>
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:layout_gravity="center_vertical"
+            android:textSize="17dp"
+            android:text="@string/confidence_level"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="0.55"
+            android:background="@drawable/spinner_border"
+            android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:spinnerMode="dropdown"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/drop" />
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/customshape"
+        android:elevation="4dp"
+        android:backgroundTint="@color/blue"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:onClick="OnButtonClick"
+        android:id="@+id/calc"
+        android:text="@string/calculate"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:breakStrategy="balanced"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/rounded_edittext"
+        android:padding="5dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+
+</LinearLayout>
+

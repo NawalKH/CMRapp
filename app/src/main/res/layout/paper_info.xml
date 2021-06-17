@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#e2e1e1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/button1"
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eef2fa"
+            android:padding="8dp"
+            android:layout_weight="1.4">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:text="Author"
+                android:textColor="@android:color/black"
+                android:textStyle="italic"
+                android:textSize="17dp"
+                android:typeface="serif"/>
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/source"
+                android:typeface="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Source"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:textStyle="italic"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_margin="4dp"
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="9dp"
+                    android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Info"
+                    android:text="Desc"
+                    android:typeface="serif" />
+
+        </ScrollView>
+
+
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                app:srcCompat="@mipmap/link2"
+                android:scaleType="center"
+                app:backgroundTint="#ffffff"
+                android:id="@+id/web"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+                app:borderWidth="1dp">
+
+                </android.support.design.widget.FloatingActionButton>
+
+
+
+            </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+    </LinearLayout>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_events"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nawal.researchapp.cmr.nawal.researchapp.eventList"
+    android:orientation="vertical"
+    android:background="#e9e8e8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find a Technique"
+        android:textColor="#0834ab"
+        android:paddingBottom="5dp"
+        android:gravity="center"/>
+
+
+
+    <!--========================================= Flow cytometer ================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/q"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flow cytometer"
+            android:textSize="15dp"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/Flow"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.3dp"
+    android:background="@color/zxing_transparent"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"></View>
+
+
+
+
+    <!--========================================= Cell sorter ================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cell sorter"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/CellSorter"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zxing_transparent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"></View>
+
+<!--========================================= DNA genetic analyzer ================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DNA genetic analyzer"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/DNA_genetic_analyzer"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zxing_transparent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"></View>
+
+
+
+    <!--========================================= Real Time PCR ================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Real Time PCR"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/Real_Time_PCR"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zxing_transparent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"></View>
+
+
+    <!--========================================= Thermal cycler ================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thermal cycler"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/Thermal_cycler"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zxing_transparent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"></View>
+
+
+    <!--========================================= Plate reader (ELISA reader)================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plate reader (ELISA reader)"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/ELISA_reader"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zxing_transparent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"></View>
+
+
+
+    <!--========================================= Microarray ================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Microarray"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/Microarray"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zxing_transparent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"></View>
+
+
+    <!--========================================= Affymetrix DNA chip analyzer ================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Affymetrix DNA chip analyzer"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/Affymetrix_DNA_chip_analyzer"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zxing_transparent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"></View>
+
+
+    <!--========================================= Cytokine array ================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cytokine array"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/Cytokine_array"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zxing_transparent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"></View>
+
+
+    <!--========================================= Confocal Microscope ================================================ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confocal Microscope"
+            android:background="#8f8f8f"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp" />
+
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/Confocal_Microscope"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zxing_transparent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"></View>
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

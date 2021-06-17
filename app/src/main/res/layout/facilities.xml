@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="College of Medicine research acids"
+        android:textColor="#000"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:padding="10dp"
+        android:typeface="serif"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/Button01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Research chairs units"
+                    android:textSize="13dp"
+                    android:textAllCaps="false"
+                    android:textColor="#666565"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"/>
+
+
+
+
+                <Button
+                    android:id="@+id/a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Central Bio-Bank"
+                    android:textAllCaps="false"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"
+                    android:textSize="13dp"
+                    android:textColor="#666565"
+                    android:layout_margin="3dp"/>
+
+
+
+                <Button
+                    android:id="@+id/Button02"
+                    android:textSize="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="exp"
+                    android:text="Experimental and Animal Surgery Center"
+                    android:elevation="10dp"
+                    android:textColor="#000000"
+                    android:textAllCaps="false"
+                    android:background="#e6f0fa"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:textSize="13dp"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Academic Labs"
+                    android:textAllCaps="false"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"
+                    android:textColor="#666565"/>
+
+
+
+
+                <Button
+                    android:id="@+id/w"
+                    android:layout_margin="3dp"
+                    android:textSize="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Genome Unit"
+                    android:textAllCaps="false"
+                    android:textColor="#666565"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"/>
+
+
+
+                <Button
+                    android:id="@+id/q"
+                    android:layout_margin="3dp"
+                    android:textSize="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Independent Research Units"
+                    android:textAllCaps="false"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"
+                    android:textColor="#666565"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/l"
+                    android:layout_margin="3dp"
+                    android:textSize="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#666565"
+                    android:text="Prince Naif Health Reserch Center (PNHRC)"
+                    android:textAllCaps="false"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"/>
+
+
+
+                <Button
+                    android:id="@+id/wa"
+                    android:layout_margin="3dp"
+                    android:textSize="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Medical Innovation Unit"
+                    android:textAllCaps="false"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"
+                    android:textColor="#666565"/>
+
+
+                <Button
+                    android:id="@+id/qs"
+                    android:layout_margin="3dp"
+                    android:textSize="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#666565"
+                    android:text="Research Excellence Units"
+                    android:textAllCaps="false"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            android:orientation="horizontal">
+
+
+
+
+                <Button
+                    android:id="@+id/gf"
+                    android:layout_margin="3dp"
+                    android:textSize="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Clinical Trial unit"
+                    android:textAllCaps="false"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"
+                    android:textColor="#666565"/>
+
+
+                <Button
+                    android:id="@+id/wd"
+                    android:layout_margin="3dp"
+                    android:textSize="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#666565"
+                    android:text="Cancer Research Center"
+                    android:textAllCaps="false"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"/>
+
+
+                <Button
+                    android:id="@+id/qq"
+                    android:layout_margin="3dp"
+                    android:textSize="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cardiac Research Center"
+                    android:textAllCaps="false"
+                    android:background="#e7e7e7"
+                    android:padding="5dp"
+                    android:textColor="#666565"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/ql"
+                android:layout_margin="3dp"
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:text="College of Medicine Research Center (CMRC)"
+                android:textAllCaps="false"
+                android:onClick="cmrc"
+                android:background="#e6f0fa"
+                android:padding="5dp"
+                android:textColor="#000000"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

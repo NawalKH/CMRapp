@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "615437519533",
+    "firebase_url": "https://cmrapp-5369b.firebaseio.com",
+    "project_id": "cmrapp-5369b",
+    "storage_bucket": "cmrapp-5369b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615437519533:android:810234148b352ac1",
+        "android_client_info": {
+          "package_name": "collegeofmedicine.researcher.cmr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615437519533-tfebhgsbnrue3ac6qtmlurdc0l96eusa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdxYSbrkJI-gn2Czz_4BIFeOA8zH6OVM0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:clickable="true"
+android:focusableInTouchMode="true"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+    android:background="@color/colorAccent">
+
+<TextView
+    android:id="@+id/contact_form_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="5dp"
+    android:text="Form Submission"
+    android:textColor="#10069f"
+    android:textSize="20dp"
+    android:typeface="serif"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/contact_form_title"
+    android:background="#6c6c6c"
+    android:visibility="visible"></View>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_gravity="center_vertical"
+        android:textSize="14dp"
+        android:text="Form Title:"
+        android:textColor="#000000"
+        android:typeface="serif"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/f_title"
+        style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.8"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:textCursorDrawable="@null"/>
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_gravity="center_vertical"
+        android:textSize="14dp"
+        android:typeface="serif"
+        android:textColor="#000000"
+        android:text="Message (optional):"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="50dp"
+        android:maxLines="3"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/f_message"
+        android:textCursorDrawable="@null"/>
+</LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_gravity="center_vertical"
+        android:textSize="14dp"
+        android:typeface="serif"
+        android:textColor="#000000"
+        android:text="Form File:"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:onClick="pickFile"
+        android:layout_marginRight="8dp"
+        android:background="#a3c9ed"
+        android:text="Choose file"
+        android:textColor="#ffffff"
+        android:id="@+id/f_attach"/>
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:text="Selected Files:"/>
+
+        <TextView
+            android:id="@+id/selected"
+            android:typeface="serif"
+            android:textSize="12dp"
+            android:textColor="#6fa9a6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"/>
+</LinearLayout>
+<Button
+    android:text="Submit"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="135dp"
+    android:layout_height="33dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/btn_sub"
+    android:elevation="4dp"
+    android:paddingLeft="70dp"
+    android:paddingRight="70dp"
+    android:onClick="sendMessage"
+    android:id="@+id/submit"
+    android:textColor="#ffffff" />
+
+
+</LinearLayout>
